@@ -2,7 +2,7 @@
 """
 *Abstract* type for Holiday Calendars.
 """
-@compat abstract type HolidayCalendar; end
+@compat abstract type HolidayCalendar <: Base.Dates.AbstractTime; end
 
 Base.string(hc::HolidayCalendar) = string(typeof(hc))
 
